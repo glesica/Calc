@@ -76,7 +76,7 @@ defmodule Calc.CalcController do
     json conn, %{result: result, message: message}
   end
 
-  def binary(conn, %{"left" => left, "op" => op, "right" => right}) do
+  def binary(conn, %{"op" => op, "left" => left, "right" => right}) do
     left_n = parse(left)
     right_n = parse(right)
 

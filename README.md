@@ -11,9 +11,9 @@ Now you can visit `localhost:4000` from your browser.
 
 ## Use
 
-Issue a `GET` request of the form `/calc/<value>/<operator>/<value>` to evaluate a
-binary expression or `/calc/<operator>/<value>` to evaluate a unary expression. For
-example, `/calc/5/mul/3` would evaluate `5 * 3`.
+Issue a `GET` request of the form `/calc/<operator>/<x>/<y>` to evaluate a
+binary expression or `/calc/<operator>/<x>` to evaluate a unary expression. For
+example, `/calc/mul/5/3` would evaluate `5 * 3`.
 
 Assign a value to a symbol (slot) by issuing a `PUT` request to `/mem/<symbol>`
 with a JSON payload of the form:

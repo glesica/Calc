@@ -20,7 +20,7 @@ defmodule Calc.Router do
     pipe_through :api
 
     get ":op/:right", CalcController, :unary
-    get ":left/:op/:right", CalcController, :binary
+    get ":op/:left/:right", CalcController, :binary
   end
 
   scope "/mem/", Calc do
